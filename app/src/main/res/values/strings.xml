@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Praktikum Modul 8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_1">Tampilan 1</string>
+    <string name="tab_text_2">Tampilan 2</string>
+    <string name="tab_text_3">Tampilan 3</string>
+    <string name="tab_text_4">Tampilan 4</string>
+    <string name="ini_akan_seru">INI akan seru</string>
+    <string name="tampilan_ketiga_tugas">Tampilan Ketiga Tugas</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="user_display_name">User Display Name</string>
+    <string name="selamat_datang">Selamat datang</string>
+</resources>
