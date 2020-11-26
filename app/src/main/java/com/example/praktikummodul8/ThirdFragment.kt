@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.Observer
 
 class ThirdFragment  : Fragment() {
     // TODO: Rename and change types of parameters
@@ -26,7 +27,16 @@ class ThirdFragment  : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?     ): View? {
         return inflater.inflate(R.layout.fragment_third,
-            container, false)     }
+            container, false)     
+    }
+     //menginisialisasi tampilan root input text name
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?)
+    {
+        super.onViewCreated(view, savedInstanceState)
+        txtName = view.findViewById(R.id.textViewName)
+        communicationViewModel!!.name.observe(requireActivity(),
+            Observer { s -> txtName!!.text = s })
+    }
     //untuk memanggil method atau member yang dideklarasikan
     companion object {
 
